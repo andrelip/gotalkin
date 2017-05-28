@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214ee101-7626-4cc6-9497-c2fb05ec5a72" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/talkin/guardian_serializer.ex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/talkin/web/router.ex" afterPath="$PROJECT_DIR$/lib/talkin/web/router.ex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.exs" afterPath="$PROJECT_DIR$/config/config.exs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mix.exs" afterPath="$PROJECT_DIR$/mix.exs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mix.lock" afterPath="$PROJECT_DIR$/mix.lock" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +17,38 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="mix.exs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mix.exs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.exs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.exs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="79" lean-forward="false" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="guardian_serializer.ex" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/talkin/guardian_serializer.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,6 +57,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lib/talkin/web/router.ex" />
+        <option value="$PROJECT_DIR$/mix.exs" />
+        <option value="$PROJECT_DIR$/config/config.exs" />
+        <option value="$PROJECT_DIR$/lib/talkin/guardian_serializer.ex" />
       </list>
     </option>
   </component>
@@ -82,42 +119,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="talkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,12 +324,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="676000" />
+    <option name="totallyTimeSpent" value="1783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -438,6 +440,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="54" column="21" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mix.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="79" lean-forward="false" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/talkin/guardian_serializer.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding />
         </state>
       </provider>
