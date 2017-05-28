@@ -28,6 +28,7 @@ defmodule Talkin.Mixfile do
   #
   # Type `mix help deps` for examples and options.
   defp deps do
+    # Phoenix Default
     [{:phoenix, "~> 1.3.0-rc", override: true},
      {:phoenix_pubsub, "~> 1.0"},
      {:phoenix_ecto, "~> 3.2"},
@@ -36,8 +37,9 @@ defmodule Talkin.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"}] ++
-     # project specific
-     [{:guardian, "~> 0.14.2"}]
+     # Project Specific
+     [{:guardian, "~> 0.14.2"},
+     {:mix_test_watch, "~> 0.3", only: :dev, runtime: false}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
