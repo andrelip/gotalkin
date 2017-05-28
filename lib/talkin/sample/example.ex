@@ -1,7 +1,8 @@
-@moduledoc """
-  Sample Module to test
-"""
 defmodule Talkin.Sample.Example do
+  @moduledoc """
+  Sample context used only for reference
+  """
+
   use Ecto.Schema
   import Ecto.Changeset
   alias Talkin.Sample.Example

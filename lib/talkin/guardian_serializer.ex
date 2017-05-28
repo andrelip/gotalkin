@@ -1,7 +1,8 @@
-@moduledoc """
-  Handles the Token Serializer
-"""
 defmodule Talkin.GuardianSerializer do
+  @moduledoc """
+  Handles the Token Serializer
+  """
+
   @behaviour Guardian.Serializer
 
   alias Talkin.Repo

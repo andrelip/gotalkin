@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20df0b8e-fea4-4b26-81ad-9ba119bfe680" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Elixir_SDK.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/mix.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/talkin.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/talkin/guardian_serializer.ex" afterPath="$PROJECT_DIR$/lib/talkin/guardian_serializer.ex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/talkin/sample/example.ex" afterPath="$PROJECT_DIR$/lib/talkin/sample/example.ex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mix.exs" afterPath="$PROJECT_DIR$/mix.exs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mix.lock" afterPath="$PROJECT_DIR$/mix.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/_build/dev/lib/talkin/ebin/" />
     <ignored path="$PROJECT_DIR$/_build/test/lib/talkin/ebin/" />
@@ -32,18 +23,28 @@
       <file leaf-file-name="example.ex" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/talkin/sample/example.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mix.exs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mix.exs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mix.exs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="584">
               <caret line="51" column="3" lean-forward="false" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="guardian_serializer.ex" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/talkin/guardian_serializer.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -64,9 +65,9 @@
       <list>
         <option value="$PROJECT_DIR$/talkin.iml" />
         <option value="$PROJECT_DIR$/lib/talkin/sample/sample.ex" />
+        <option value="$PROJECT_DIR$/mix.exs" />
         <option value="$PROJECT_DIR$/lib/talkin/guardian_serializer.ex" />
         <option value="$PROJECT_DIR$/lib/talkin/sample/example.ex" />
-        <option value="$PROJECT_DIR$/mix.exs" />
       </list>
     </option>
   </component>
@@ -467,7 +468,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5093000" />
+    <option name="totallyTimeSpent" value="5215000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -852,14 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/talkin/guardian_serializer.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deps/ecto/lib/ecto/changeset.ex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4696">
@@ -876,18 +869,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/talkin/sample/example.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mix.exs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="584">
           <caret line="51" column="3" lean-forward="false" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/talkin/sample/example.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/talkin/guardian_serializer.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding />
         </state>
       </provider>
