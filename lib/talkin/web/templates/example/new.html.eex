@@ -1,0 +1,6 @@
+<h2>New Example</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: example_path(@conn, :create) %>
+
+<span><%= link "Back", to: example_path(@conn, :index) %></span>

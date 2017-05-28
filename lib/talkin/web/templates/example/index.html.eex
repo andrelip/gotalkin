@@ -1,0 +1,28 @@
+<h2>Listing Examples</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for example <- @examples do %>
+    <tr>
+      <td><%= example.name %></td>
+      <td><%= example.email %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: example_path(@conn, :show, example), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: example_path(@conn, :edit, example), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: example_path(@conn, :delete, example), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Example", to: example_path(@conn, :new) %></span>
