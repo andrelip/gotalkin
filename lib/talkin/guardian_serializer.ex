@@ -1,8 +1,10 @@
+@moduledoc """
+  Handles the Token Serializer
+"""
 defmodule Talkin.GuardianSerializer do
   @behaviour Guardian.Serializer
 
   alias Talkin.Repo
-  alias Talkin.User
 
 #  def for_token(user = %User{}), do: { :ok, "User:#{user.id}" }
   def for_token(_), do: { :error, "Unknown resource type" }

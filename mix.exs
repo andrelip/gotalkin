@@ -39,7 +39,10 @@ defmodule Talkin.Mixfile do
      {:cowboy, "~> 1.0"}] ++
      # Project Specific
      [{:guardian, "~> 0.14.2"},
-     {:mix_test_watch, "~> 0.3", only: :dev, runtime: false}]
+      {:comeonin, "~> 3.0"}] ++
+     # Developer Tools
+     [{:mix_test_watch, "~> 0.3", only: :dev, runtime: false},
+     {:credo, "~> 0.7.4", only: [:dev, :test], runtime: false}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.

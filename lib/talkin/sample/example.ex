@@ -1,3 +1,6 @@
+@moduledoc """
+  Sample Module to test
+"""
 defmodule Talkin.Sample.Example do
   use Ecto.Schema
   import Ecto.Changeset
