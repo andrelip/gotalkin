@@ -6,4 +6,8 @@ defmodule Talkin.GraphQL.Schema.Types do
     field :name, :string
     field :email, :string
   end
+
+  object :session do
+    field :token, :string
+  end
 end

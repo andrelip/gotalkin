@@ -12,6 +12,10 @@ defmodule Talkin.GraphQL.Schema do
     field :users, list_of(:user) do
       resolve &Talkin.GraphQL.UserResolver.all/2
     end
+
+    field :test_auth, :user do
+      resolve &Talkin.GraphQL.UserResolver.all_mine/2
+    end
   end
 
   mutation do
@@ -20,6 +24,13 @@ defmodule Talkin.GraphQL.Schema do
       arg :user, :update_user_params
 
       resolve &Talkin.GraphQL.UserResolver.update/2
+    end
+
+    field :login, type: :session do
+      arg :email, non_null(:string)
+      arg :password, non_null(:string)
+
+      resolve &Talkin.GraphQL.UserResolver.login/2
     end
   end
 end
