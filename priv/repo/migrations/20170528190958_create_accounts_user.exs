@@ -2,7 +2,7 @@ defmodule Talkin.Repo.Migrations.CreateTalkin.Accounts.User do
   use Ecto.Migration
 
   def change do
-    create table(:accounts_users) do
+    create table(:users) do
       add :name, :string
       add :email, :string
       add :password_hash, :string
@@ -10,6 +10,6 @@ defmodule Talkin.Repo.Migrations.CreateTalkin.Accounts.User do
       timestamps()
     end
 
-    create unique_index(:accounts_users, [:email])
+    create unique_index(:users, [:email])
   end
 end

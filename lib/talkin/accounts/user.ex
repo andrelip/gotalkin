@@ -4,7 +4,7 @@ defmodule Talkin.Accounts.User do
   alias Talkin.Accounts.User
 
 
-  schema "accounts_users" do
+  schema "users" do
     field :email, :string
     field :name, :string
     field :password_hash, :string

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="ELIXIR_MODULE" version="4">
   <component name="ModuleRunConfigurationManager">
-    <configuration default="false" name="test" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" show_console_on_std_err="false" show_console_on_std_out="false">
-      <option name="passParentEnvs" value="false" />
-      <option name="programParameters" value="test.watch test" />
-      <option name="workingDirectory" value="" />
-      <module name="talkin" />
-      <envs />
-      <method />
-    </configuration>
+    <shared />
+    <local>
+      <configuration default="false" name="test" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" show_console_on_std_err="false" show_console_on_std_out="false">
+        <option name="passParentEnvs" value="false" />
+        <option name="programParameters" value="test.watch test" />
+        <option name="workingDirectory" value="" />
+        <module name="talkin" />
+        <envs />
+        <method />
+      </configuration>
+    </local>
   </component>
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/_build/dev/lib/intellijelixir/ebin" />
