@@ -6,8 +6,8 @@ defmodule Talkin.AccountsTest do
   describe "users" do
     alias Talkin.Accounts.User
 
-    @valid_attrs %{email: "some email", name: "some name", password_hash: "some password_hash"}
-    @update_attrs %{email: "some updated email", name: "some updated name", password_hash: "some updated password_hash"}
+    @valid_attrs %{email: "some email", name: "some name", password: "mypass"}
+    @update_attrs %{email: "some updated email", name: "some updated name", password: "mypass"}
     @invalid_attrs %{email: nil, name: nil, password_hash: nil}
 
     def user_fixture(attrs \\ %{}) do
@@ -21,19 +21,19 @@ defmodule Talkin.AccountsTest do
 
     test "list_users/0 returns all users" do
       user = user_fixture()
-      assert Accounts.list_users() == [user]
+      assert Accounts.list_users() |> remove_password_hash() == [user] |> remove_password_hash()
     end
 
     test "get_user!/1 returns the user with given id" do
       user = user_fixture()
-      assert Accounts.get_user!(user.id) == user
+      user_from_db = Accounts.get_user!(user.id)
+      assert remove_password_hash(user) == remove_password_hash(user_from_db)
     end
 
     test "create_user/1 with valid data creates a user" do
       assert {:ok, %User{} = user} = Accounts.create_user(@valid_attrs)
       assert user.email == "some email"
       assert user.name == "some name"
-      assert user.password_hash == "some password_hash"
     end
 
     test "create_user/1 with invalid data returns error changeset" do
@@ -44,15 +44,15 @@ defmodule Talkin.AccountsTest do
       user = user_fixture()
       assert {:ok, user} = Accounts.update_user(user, @update_attrs)
       assert %User{} = user
-      assert user.email == "some updated email"
       assert user.name == "some updated name"
-      assert user.password_hash == "some updated password_hash"
+      assert user.password_hash != nil
     end
 
     test "update_user/2 with invalid data returns error changeset" do
       user = user_fixture()
       assert {:error, %Ecto.Changeset{}} = Accounts.update_user(user, @invalid_attrs)
-      assert user == Accounts.get_user!(user.id)
+      user_from_db = Accounts.get_user!(user.id)
+      assert remove_password_hash(user) == remove_password_hash(user_from_db)
     end
 
     test "delete_user/1 deletes the user" do
@@ -64,6 +64,14 @@ defmodule Talkin.AccountsTest do
     test "change_user/1 returns a user changeset" do
       user = user_fixture()
       assert %Ecto.Changeset{} = Accounts.change_user(user)
+    end
+
+    defp remove_password_hash(items) when is_list(items) do
+      items |> Enum.map(fn item -> Map.delete(item, :password) end)
+    end
+
+    defp remove_password_hash(item) do
+      Map.delete(item, :password)
     end
   end
 end
