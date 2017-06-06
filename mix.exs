@@ -17,7 +17,7 @@ defmodule Talkin.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {Talkin.Application, []},
-     extra_applications: [:logger, :runtime_tools]]
+     extra_applications: [:logger, :runtime_tools, :absinthe]]
   end
 
   # Specifies which paths to compile per environment.
@@ -39,7 +39,9 @@ defmodule Talkin.Mixfile do
      {:cowboy, "~> 1.0"}] ++
      # Project Specific
      [{:guardian, "~> 0.14.2"},
-      {:comeonin, "~> 3.0"}] ++
+      {:comeonin, "~> 3.0"},
+      {:absinthe, "~> 1.3.0"},
+      {:absinthe_plug, "~> 1.3.0"}] ++
      # Developer Tools
      [{:mix_test_watch, "~> 0.3", only: :dev, runtime: false},
      {:credo, "~> 0.7.4", only: [:dev, :test], runtime: false}]

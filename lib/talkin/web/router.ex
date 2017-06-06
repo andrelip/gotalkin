@@ -7,6 +7,10 @@ defmodule Talkin.Web.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+
+    if Mix.env == :dev do
+      forward "/graphiql", Absinthe.Plug.GraphiQL, schema: Talkin.GraphQL.Schema
+    end
   end
 
   pipeline :api do
