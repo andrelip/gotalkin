@@ -51,7 +51,7 @@ defmodule Talkin.RoomManager do
   """
   def create_room(attrs \\ %{}) do
     %Room{}
-    |> Room.changeset(attrs)
+    |> Room.create_public_changeset(attrs)
     |> Repo.insert()
   end
 
